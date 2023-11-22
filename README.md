@@ -1,10 +1,57 @@
-# asdf-lab [![Plugin Test](https://github.com/particledecay/asdf-lab/workflows/Plugin%20Test/badge.svg)](https://github.com/particledecay/asdf-lab)
-[asdf version manager](https://github.com/asdf-vm/asdf) plugin for the [lab](https://github.com/zaquestion/lab) GitLab CLI tool
+<div align="center">
 
-## Install
-```bash
-asdf plugin-add lab https://github.com/particledecay/asdf-lab.git
+# asdf-lab [![Build](https://github.com/particledecay/asdf-lab/actions/workflows/build.yml/badge.svg)](https://github.com/particledecay/asdf-lab/actions/workflows/build.yml) [![Lint](https://github.com/particledecay/asdf-lab/actions/workflows/lint.yml/badge.svg)](https://github.com/particledecay/asdf-lab/actions/workflows/lint.yml)
+
+[lab](https://github.com/zaquestion/lab) plugin for the [asdf version manager](https://asdf-vm.com).
+
+</div>
+
+# Contents
+
+- [Dependencies](#dependencies)
+- [Install](#install)
+- [Contributing](#contributing)
+- [License](#license)
+
+# Dependencies
+
+- `bash`, `curl`, `tar`, and [POSIX utilities](https://pubs.opengroup.org/onlinepubs/9699919799/idx/utilities.html).
+
+# Install
+
+Plugin:
+
+```shell
+asdf plugin add lab
+# or
+asdf plugin add lab https://github.com/particledecay/asdf-lab.git
 ```
 
-## Use
-Check out the [asdf](https://github.com/asdf-vm/asdf) readme for instructions on how to install and manage versions of lab.
+lab:
+
+```shell
+# Show all installable versions
+asdf list-all lab
+
+# Install specific version
+asdf install lab latest
+
+# Set a version globally (on your ~/.tool-versions file)
+asdf global lab latest
+
+# Now lab commands are available
+lab --version
+```
+
+Check [asdf](https://github.com/asdf-vm/asdf) readme for more instructions on how to
+install & manage versions.
+
+# Contributing
+
+Contributions of any kind welcome! See the [contributing guide](contributing.md).
+
+[Thanks goes to these contributors](https://github.com/particledecay/asdf-lab/graphs/contributors)!
+
+# License
+
+See [LICENSE](LICENSE) © [Joey Espinosa](https://github.com/particledecay/)
